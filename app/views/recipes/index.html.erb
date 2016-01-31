@@ -1,0 +1,15 @@
+<div class="row">
+  <% @recipes.each do |recipe| %>
+    <div class="col-md-offset-1 col-md-3 col-sm-6 list-view">
+      <div class="thumbnail">
+      <h2><a href="/recipes/<%= recipe.id %>"><%= recipe.title %></a></h2> 
+
+      <h3><%= recipe.chef %></h3>
+      <h3><%= recipe.ingredients %></h3>
+      <h3><%= recipe.directions %></h3> 
+      <%= image_tag recipe.image, width: 300, class: "img-responsive" %>
+      <br>
+      </div>
+    </div>
+  <% end %>
+</div>
