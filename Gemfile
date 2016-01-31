@@ -11,6 +11,8 @@ gem 'rails_12factor', group: :production
 
 gem 'seed_dump'
 
+gem 'devise'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.6'
