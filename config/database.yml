@@ -25,3 +25,7 @@ production:
     encoding: unicode
     pool: 5
     database: cookbook-app-production
+
+# production:
+#   <<: *default
+#   database: db/production.sqlite3
